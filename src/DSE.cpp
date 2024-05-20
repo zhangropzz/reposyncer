@@ -91,7 +91,6 @@ int main(int argc, char **argv) {
       std::cerr << FormulaFile << " not found" << std::endl;
       return 1;
     }
-    std::cout << "test!";
   }
 }
 
