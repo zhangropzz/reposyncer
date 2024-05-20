@@ -74,7 +74,7 @@ int main(int argc, char **argv) {
 
   ARG_EXIST_CHECK(Target, argv[1]);
 
-  int MaxIter = INT_MAX;
+  int MaxIter = INT_MIN;
   if (argc == 3) {
     MaxIter = atoi(argv[2]);
   }
@@ -91,7 +91,8 @@ int main(int argc, char **argv) {
       std::cerr << FormulaFile << " not found" << std::endl;
       return 1;
     }
-    generateInput();
-    Iter++;
+    std::cout << "test!";
   }
 }
+
+
